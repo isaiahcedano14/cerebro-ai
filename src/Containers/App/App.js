@@ -11,9 +11,6 @@ const App = () => {
 
 	// Face Detect States/Variables
 	let convertedImgWidth = window.innerWidth/2;
-	while (convertedImgWidth > 300) {
-		convertedImgWidth = convertedImgWidth - 1
-	}
 
 	const [faceInputField, setFaceInputField] = useState({
 		value: ""
@@ -118,7 +115,7 @@ const App = () => {
 			setConvertedUrl({
 				url: converted_url
 			})
-		}, 2000)
+		}, 4000)
 	};
 
 	const detectFaces = () => {
@@ -154,6 +151,10 @@ const App = () => {
 						const {face_rectangle} = data_Face;
 						return face_rectangle
 					});
+					
+					if (faces.length === 0) {
+				        	alert("Puede ser que su pantalla es muy chica de acuerdo a la imagen seleccionada, por lo cual no puede detectar caras!")
+				        }
 
 					setDetectedFaces({
 						faces: faces
