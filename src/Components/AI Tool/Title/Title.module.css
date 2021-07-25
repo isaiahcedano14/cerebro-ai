@@ -1,0 +1,7 @@
+.Title {
+    font-size: 1.5em;
+}
+
+.Title:hover {
+    cursor: default;
+}

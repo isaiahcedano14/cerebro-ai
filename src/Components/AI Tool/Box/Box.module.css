@@ -1,0 +1,8 @@
+.box_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: black 1px solid;
+    padding: 25px;
+}

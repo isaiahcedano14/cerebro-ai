@@ -1,0 +1,19 @@
+.faceRecognition {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+
+.faceRecognition__container {
+
+}
+
+.boundingBox {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+
+}

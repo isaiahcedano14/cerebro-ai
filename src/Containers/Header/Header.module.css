@@ -1,0 +1,11 @@
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+@media (orientation: portrait) {
+    .header__container {
+        justify-content: center;
+    }
+}

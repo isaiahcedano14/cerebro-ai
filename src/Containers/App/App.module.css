@@ -1,0 +1,63 @@
+.particles {
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     z-index: -1;
+}
+
+
+.app {
+     display: flex;
+     flex-direction: column;
+}
+
+.app__header {
+     width: 100vw;
+     height: 30vh;
+}
+
+.app__lower_content {
+     height: 70vh;
+}
+
+@media (max-height: 610px) {
+     .app__header {
+          margin-bottom: 18%;
+     }
+}
+
+@media (max-height: 550px) {
+     .app__header {
+          margin-bottom: 25%;
+     }
+}
+
+@media (max-height: 400px) {
+     .app__header {
+          margin-bottom: 35%;
+     }
+}
+
+@media (orientation: portrait) {
+     .app__header {
+          margin-bottom: 60%;
+     }
+
+     .app__lower_content {
+          margin-bottom: 100px;
+     }
+}
+
+@media (max-width: 460px) {
+     .app__header {
+          margin-bottom: 60%;
+     }
+}
+
+@media (max-width: 360px) {
+     .app__header {
+          margin-bottom: 75%;
+     }
+}
