@@ -109,7 +109,7 @@ const App = () => {
 		};
 
 		kraken.url(krakenData, (err, resp) => {
-			if (resp.hasOwnProperty('kraked_url')) {
+			if (typeof(resp) !== "undefined") {
 				converted_url = resp.kraked_url
 			}
 		});
